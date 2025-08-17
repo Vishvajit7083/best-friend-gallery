@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Friend Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin: 20px;
+      font-size: 2.5rem;
+      color: white;
+      text-shadow: 0 0 10px #ff6699;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #ff6699; }
+      to { text-shadow: 0 0 20px #fff, 0 0 30px #ff3366; }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.4s, box-shadow 0.4s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    }
+
+    footer {
+      margin: 20px;
+      font-size: 1.2rem;
+      color: white;
+      text-shadow: 0 0 5px #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌸 My Best Friend's Gallery 🌸</h1>
+
+  <div class="gallery">
+    <!-- Replace with your friend’s images -->
+    <img src="1.jpg" alt="Best Friend 1">
+    <img src="2.jpg" alt="Best Friend 2">
+    <img src="3.jpg" alt="Best Friend 3">
+    <img src="4.jpg" alt="Best Friend 4">
+    <img src="5.jpg" alt="Best Friend 5">
+  </div>
+
+  <footer>
+  💖 Dedicated to my Best Friend 💖
+  <p style="margin-top:10px; font-size:1rem; color:white; text-shadow:0 0 5px #000;">
+    Thank you for always being there through every smile and tear.<br>
+    You’re not just my friend, you’re family forever. 🌸✨
+  </p>
+</footer>
+
+</body>
+</html>
